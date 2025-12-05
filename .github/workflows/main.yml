@@ -1,0 +1,59 @@
+on:
+  push:
+    branches:
+      - main
+
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      - name: 'test location'
+      - run: pwd
+
+      - name: 'test print'
+      - run: echo "MO Y MO"
+
+
+      
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
