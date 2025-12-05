@@ -38,7 +38,7 @@ jobs:
   
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/learn_push_image .    
+        run: docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/learn_push_image .    
       
       - name: Push image to DockerHub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/learn_push_image
