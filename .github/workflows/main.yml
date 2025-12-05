@@ -14,10 +14,10 @@ jobs:
     
     steps:
       - name: 'test location'
-      - run: pwd
+        run: pwd
 
       - name: 'test print'
-      - run: echo "Y MO"
+        run: echo "Y MO"
 
 
       
