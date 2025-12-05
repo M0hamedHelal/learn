@@ -13,11 +13,20 @@ jobs:
 
     
     steps:
-      - name: 'test location'
-        run: pwd
+      - name: 'before checkout'
+        run: ls
 
-      - name: 'test print'
-        run: echo "Y MO"
+
+      - uses: actions/checkout@v3
+
+
+      - name: 'before checkout'
+        run: ls
+
+
+          
+
+      
 
 
       
