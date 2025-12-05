@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/learn_push_image .
+        run: docker buildx -t ${{ secrets.DOCKER_USERNAME }}/learn_push_image .
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/learn_push_image
